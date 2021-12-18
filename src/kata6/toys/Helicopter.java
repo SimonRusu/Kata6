@@ -5,11 +5,11 @@ package kata6.toys;
  * @author Simon
  */
 
-public class Car {
+public class Helicopter {
     final private Integer serialNumber;
-    final String type = "car";
+    final String type = "helicopter";
             
-    public Car(Integer serialNumber){
+    public Helicopter(Integer serialNumber){
         this.serialNumber = serialNumber;
     }
     
@@ -22,10 +22,10 @@ public class Car {
     }
     
     public void pack(){
-        System.out.printf("Packing car '%d'\n", this.serialNumber);
+        System.out.printf("Packing helicopter '%d'\n", this.serialNumber);
     }
     
     public void label(){
-         System.out.printf("Labelling car '%d'\n", this.serialNumber);       
+         System.out.printf("Labelling helicopter '%d'\n", this.serialNumber);       
     }
 }
