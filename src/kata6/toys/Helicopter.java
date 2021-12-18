@@ -1,10 +1,5 @@
 package kata6.toys;
 
-/**
- *
- * @author Simon
- */
-
 public class Helicopter {
     final private Integer serialNumber;
     final String type = "helicopter";
