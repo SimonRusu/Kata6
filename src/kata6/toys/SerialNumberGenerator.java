@@ -2,7 +2,7 @@ package kata6.toys;
 
 /**
  *
- * @author Entrar
+ * @author Simon
  */
 
 public class SerialNumberGenerator {
