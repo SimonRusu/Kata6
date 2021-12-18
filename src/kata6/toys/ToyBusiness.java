@@ -1,5 +1,10 @@
 package kata6.toys;
 
+/**
+ *
+ * @author Entrar
+ */
+
 public class ToyBusiness {
 
     private final SerialNumberGenerator generator = new SerialNumberGenerator();

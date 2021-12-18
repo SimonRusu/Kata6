@@ -5,8 +5,12 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import kata6.toys.Car;
 import kata6.toys.Helicopter;
-import kata6.toys.SerialNumberGenerator;
 import kata6.toys.ToyBusiness;
+
+/**
+ *
+ * @author Entrar
+ */
 
 public class Kata6 {
 
