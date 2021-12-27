@@ -1,5 +1,8 @@
 package factories.regionalfactories;
-
+/**
+ *
+ * @author Simon
+ */
 import factories.ToyFactory;
 import toyproduct.Toy;
 import toyproduct.models.AsianCarToy;

@@ -1,5 +1,10 @@
 package business;
 
+/**
+ *
+ * @author Simon
+ */
+
 import toyproduct.Toy;
 import factories.ToyFactory;
 

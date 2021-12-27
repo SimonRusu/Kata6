@@ -1,5 +1,9 @@
 package factories;
 import toyproduct.Toy;
+/**
+ *
+ * @author Simon
+ */
 
 public abstract class ToyFactory  {
     protected final SerialNumberGenerator generator = new SerialNumberGenerator();

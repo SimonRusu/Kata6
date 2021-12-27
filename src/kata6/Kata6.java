@@ -1,5 +1,8 @@
 package kata6;
-
+/**
+ *
+ * @author Simon
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;

@@ -1,7 +1,10 @@
 package toyproduct.models;
 
 import toyproduct.Toy;
-
+/**
+ *
+ * @author Simon
+ */
 public class AmericanHelicopterToy implements Toy{
     final private Integer serialNumber;
     final String type = "helicopter";

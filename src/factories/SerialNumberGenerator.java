@@ -1,5 +1,8 @@
 package factories;
-
+/**
+ *
+ * @author Simon
+ */
 public class SerialNumberGenerator {
     private Integer serialNumber = 0;
     
