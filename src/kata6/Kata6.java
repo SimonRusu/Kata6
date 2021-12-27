@@ -7,14 +7,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 import business.ToyBusiness;
-import factories.regionalfactories.AmericanToyFactory;
+import factories.regionalfactories.AmericanCarToyFactory;
+import factories.regionalfactories.AmericanSubmarineToyFactory;
+import factories.regionalfactories.AsianHelicopterToyFactory;
 import toyproduct.Toy;
 
 public class Kata6 {
 
     public static void main(String[] args) {
-        ToyBusiness business = new ToyBusiness(new AmericanToyFactory());
-        //ToyBusiness business = new AsianToyBusiness();
+        ToyBusiness business = new ToyBusiness();
+        business.add("car", new AmericanCarToyFactory());
+        business.add("helicopter", new AsianHelicopterToyFactory());
+        business.add("submarine", new AmericanSubmarineToyFactory());
         ArrayList<Toy> toys = new ArrayList<>();
         
         Scanner in = new Scanner(System.in);
@@ -25,6 +29,7 @@ public class Kata6 {
             switch (line) {
                 case "car":
                 case "helicopter":
+                case "submarine":
                     toys.add(business.produceToy(line));
                     System.out.println("Built toys: " + toys.stream()
                             .map(c -> c.toString())

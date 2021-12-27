@@ -1,15 +1,15 @@
 package toyproduct.models;
+
+import toyproduct.Toy;
 /**
  *
  * @author Simon
  */
-import toyproduct.Toy;
-
-public class AmericanCarToy implements Toy{
+public class AmericanSubmarineToy implements Toy{
     final private Integer serialNumber;
-    final String type = "car";
+    final String type = "submarine";
             
-    public AmericanCarToy(Integer serialNumber){
+    public AmericanSubmarineToy(Integer serialNumber){
         this.serialNumber = serialNumber;
     }
     
@@ -24,16 +24,15 @@ public class AmericanCarToy implements Toy{
     
     @Override
     public void pack(){
-        System.out.printf("Packing car '%d'\n", this.serialNumber);
+        System.out.printf("Packing submarine '%d'\n", this.serialNumber);
     }
     
     @Override
     public void label(){
-         System.out.printf("Labelling car '%d'\n", this.serialNumber);  
+         System.out.printf("Labelling submarine '%d'\n", this.serialNumber);       
     }
-    
     @Override
     public String toString(){
-        return "AmericanCarToy{" + "serialNumber" + serialNumber + '}';
+        return "AmericanSubmarineToy{" + "serialNumber" + serialNumber + '}';
     }
 }
