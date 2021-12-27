@@ -1,10 +1,5 @@
 package toyproduct.models;
 
-/**
- *
- * @author Simon
- */
-
 import toyproduct.Toy;
 
 public class AsianCarToy implements Toy{

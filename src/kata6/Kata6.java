@@ -1,23 +1,16 @@
 package kata6;
 
-/**
- *
- * @author Simon
- */
-
-import branches.AmericanToyBusiness;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-import toyproduct.models.AmericanCarToy;
-import toyproduct.models.AmericanHelicopterToy;
 import business.ToyBusiness;
+import factories.regionalfactories.AmericanToyFactory;
 import toyproduct.Toy;
 
 public class Kata6 {
 
     public static void main(String[] args) {
-        ToyBusiness business = new AmericanToyBusiness();
+        ToyBusiness business = new ToyBusiness(new AmericanToyFactory());
         //ToyBusiness business = new AsianToyBusiness();
         ArrayList<Toy> toys = new ArrayList<>();
         
@@ -29,7 +22,7 @@ public class Kata6 {
             switch (line) {
                 case "car":
                 case "helicopter":
-                    toys.add(business.createToy(line));
+                    toys.add(business.produceToy(line));
                     System.out.println("Built toys: " + toys.stream()
                             .map(c -> c.toString())
                             .collect(Collectors.joining(", ")));

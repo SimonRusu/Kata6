@@ -1,9 +1,4 @@
-package kata6.toys;
-
-/**
- *
- * @author Simon
- */
+package factories;
 
 public class SerialNumberGenerator {
     private Integer serialNumber = 0;

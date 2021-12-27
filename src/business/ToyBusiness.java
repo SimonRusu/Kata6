@@ -1,16 +1,17 @@
 package business;
 
-/**
- *
- * @author Simon
- */
-
-import kata6.toys.SerialNumberGenerator;
 import toyproduct.Toy;
+import factories.ToyFactory;
 
-public abstract class ToyBusiness {
-    protected final SerialNumberGenerator generator = new SerialNumberGenerator();
+public class ToyBusiness {
+    private final ToyFactory toyFactory;
     
-    public abstract Toy createToy(String type);
+    public ToyBusiness(ToyFactory toyFactory){
+        this.toyFactory = toyFactory;
+    }
+    
+    public Toy produceToy(String type){
+        return this.toyFactory.produceToy(type);
+    }
     
 }
